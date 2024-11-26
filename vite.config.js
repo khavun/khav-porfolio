@@ -15,5 +15,9 @@ export default defineConfig({
   },
   server: {
     open: true, // Automatically open the app in the browser
+    host: '0.0.0.0', // Allow external access (this binds the server to all network interfaces)
+    port: 5173, // Ensure the port matches the one you're using
+    strictPort: true, // Ensures the server only runs on the given port
   }
 })
+
